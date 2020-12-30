@@ -1,0 +1,46 @@
+body {
+    background-color: #591829;
+}
+
+.banner {
+    background-image: url(../img/BannerWeb.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 550px;
+}
+
+.ban {
+    background: #000;
+    opacity: .8;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.desc {
+    background-color: #F2E6D8;
+    color: #591829;
+}
+
+.banner-pelicula {
+    background-color: #BFAF8F;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.backcomment {
+    background-color: #F2E6D8 !important;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
