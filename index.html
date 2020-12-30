@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JS-MOVIE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Populares.html">Populares</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="jumbotron text-center banner">
+        <div class="container ban">
+            <br>
+            <h1 class="jumbotron-heading">Encontraras las últimas Películas y sus Descripciones!!</h1>
+            <p class="lead text-white">Encuentra todo en películas del cine mundial</p>
+            <p>
+                <a href="#" class="btn btn-primary my-2">Registrate</a>
+                <a href="#" class="btn btn-secondary my-2">Novedades</a>
+            </p>
+            <br>
+        </div>
+
+    </section>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-white">Películas Estrenos</h1>
+            </div>
+        </div>
+    </div>
+    <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+            <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+            <div class="contenedor-carousel">
+                <div class="carousel col-12" id="peliculas2">
+                </div>
+            </div>
+            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-white text-center">PELIS-JS - VER PELICULAS Y SERIES ONLINE EN HD</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3 ml-auto">
+                <strong class="text-white">Buscar película:</strong>
+                <input class="form-control ml-auto" type="text" id="nombre">
+                <button class="btn btn-success mt-2" onclick="BuscarPelicula();">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row" id="peliculas">
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled" style="margin-right:3px;">
+                            <a class="page-link" href="#" tabindex="-1" style="color:#591829; background-color: #F2E6D8;">Anterior</a>
+                        </li>
+                        <li class="page-item" style="margin-right:3px;"><a class="page-link" href="index.html" style="color: #591829; background-color: #F2E6D8;">1</a></li>
+                        <li class="page-item" style="margin-right:3px;"><a class="page-link" href="Pagina2.html" style="color: #591829; background-color: #F2E6D8;">2</a></li>
+                        <li class="page-item" style="margin-right:3px;"><a class="page-link" href="Pagina3.html" style="color: #591829; background-color: #F2E6D8;">3</a></li>
+                        <li class="page-item" style="margin-right:3px;">
+                            <a class="page-link" href="Pagina2.html" style="color: #591829; background-color: #F2E6D8;">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12">
+                <footer class="bg-dark text-white text-center text-lg-start">
+                    <!-- Grid container -->
+                    <div class="container p-4">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-lg-6 col-md-12  mb-4 mb-md-0">
+                                <h5 class="text-left text-uppercase">Certamen WEB JS</h5>
+
+                                <p class="text-left">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h6 class="text-left text-uppercase">Visita nuestras páginas</h6>
+
+                                <ul class="list-unstyled text-left mb-0">
+                                    <li>
+                                        <a href="index.html" class="text-white">Página de inicio</a>
+                                    </li>
+                                    <li>
+                                        <a href="Populares.html" class="text-white">Populares</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!--Grid row-->
+                    </div>
+                    <!-- Grid container -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                        © 2020 Copyright:
+                        <a class="text-white" href="https://mdbootstrap.com/">Juaquin Sandoval</a>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            getPolulares();
+            getPolulares2();
+
+
+        });
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+
+        function getPolulares() {
+
+            $.ajax({
+                url: 'https://api.themoviedb.org/3/movie/popular?api_key=a2206509622d57a6ed7e5526a8bcef32&language=es-ES&page=1',
+                type: 'GET',
+                dataType: 'json',
+                success: function(result, status, xhr) {
+                    let html = '';
+                    for (let item of result.results) {
+
+                        html += '<div class="col-sm-12 col-md-4 col-lg-3 ">';
+                        html += '<div class="card mb-4  box-shadow ">';
+                        html += '<img class="card-img-top" src="https://image.tmdb.org/t/p/w500' + item.poster_path + '" alt="Card image cap">';
+                        html += '<div class="card-body desc">';
+                        html += '<strong class="card-text">' + item.title + '</strong>';
+                        html += '<p class="card-text">' + item.overview.substring(0, 50) + '...<a class="btn btn-info" href="pelicula.html?idPelicula=' + item.id + '">Ver mas</a></p>';
+                        html += '<div class="d-flex justify-content-between align-items-center">';
+                        html += '<div class="btn-group">';
+                        html += '<button type="button" class="btn btn-sm btn-outline-secondary">' + item.release_date + '</button>';
+
+                        html += '</div>';
+                        html += '<svg xmlns="http://www.w3.org/2000/svg" style="margin-left: auto;" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">';
+                        html += '<path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>';
+                        html += '<small class="text-muted ">' + "  . " + item.vote_average + '</small>';
+                        html += '</svg>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                        html += '</div>';
+                    }
+
+                    $('#peliculas').html(html);
+                },
+                error: function(xhr, status) {
+                    console.log('fallo la solicitud');
+                }
+            })
+
+        }
+
+
+
+        function getPolulares2() {
+
+            $.ajax({
+                url: 'https://api.themoviedb.org/3/movie/now_playing?api_key=70677fc94201321d912ac1dc8f9ca85b&language=en-US&page=1',
+                type: 'GET',
+                dataType: 'json',
+                success: function(result, status, xhr) {
+                    let html = '';
+
+                    for (let item of result.results) {
+                        html += '<div class="pelicula col-12 col-md-1">';
+                        html += '<a href="pelicula.html?idPelicula=' + item.id + '"><img class="card-img-top" src="https://image.tmdb.org/t/p/w500' + item.poster_path + '" alt=""></a>';
+                        html += '</div>';
+
+                    }
+
+                    $('#peliculas2').html(html);
+                },
+                error: function(xhr, status) {
+                    console.log('falló la solicitud');
+                }
+            })
+
+        }
+
+        function BuscarPelicula() {
+
+
+            var nombre = document.getElementById("nombre").value;
+
+            if (nombre !== "") {
+                $.ajax({
+                    url: 'https://api.themoviedb.org/3/search/movie?api_key=70677fc94201321d912ac1dc8f9ca85b&language=es-ES&query=' + nombre + '&page=1&include_adult=false',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(result, status, xhr) {
+                        let html = '';
+                        console.log(result);
+                        // $("#Actores").html(html);
+
+
+                        for (let item of result.results) {
+                            html += '<div class="col-lg-4">';
+                            html += '<div class="card mb-4  box-shadow ">';
+                            html += '<a href="pelicula.html?idPelicula=' + item.id + '"><img class="card-img-top" src="https://image.tmdb.org/t/p/w500' + item.poster_path + '" alt=""></a>';
+                            html += '<div class="card-body desc">';
+                            html += '<strong class="card-text">' + item.title + '</strong>';
+                            html += '</div>';
+                            html += '</div>';
+                            html += '</div>';
+                        }
+
+                        $('#peliculas').html(html);
+                    },
+                    error: function(xhr, status) {
+                        console.log('falló la solicitud');
+                    }
+                })
+            } else {
+                $(document).ready(function() {
+
+                    getPolulares();
+                    getPolulares2();
+
+
+                });
+            }
+
+
+
+        }
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+</html>
